@@ -4,11 +4,11 @@ h1 {
 }
 p {
     margin: 0;
-    font-weight: 20px;
+    font-size: 20px;
 }
 a {
     margin: 0;
-    font-weight: 20px;
+    font-size: 20px;
     color: rgb(255, 255, 255);  
 }
 a:visited {
@@ -23,7 +23,7 @@ header {
     text-align: center;
 }
 main {
-    margin: 10px;
+    padding: 10px;
 }
 #parent {
     display: flex;
@@ -37,14 +37,14 @@ main {
     text-align: center;
 }
 h2 {
-    font-weight: 25px;
+    font-size: 25px;
     border-bottom: dotted 3px rgb(236, 122, 122);
 }
 h2::before {
     content: "●";
     color: rgb(239, 111, 139);
 }
-div p:nth-of-type(2)::first-letter {
+.contents p:nth-of-type(2)::first-letter {
     font-weight: bold;
     color: rgb(97, 206, 249);
 }
@@ -58,13 +58,13 @@ footer {
 }
 @media screen and (max-width: 768px) {
     h2 {
-        font-sixe: 30px;
+        font-size: 30px;
     }
     p {
         font-size: 25px;
     }
     #parent {
-        display: block;
+        flex-direction: column;
     }
 }
 
